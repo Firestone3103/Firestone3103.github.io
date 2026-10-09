@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja strona</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js"></script>
+</head>
+<body>
+
+    <div id="login-page" class="page active">
+        <div id="home-screen">
+            <h1>Strona jest zabezpieczona hasłem i tylko TY będziesz je znać!</h1>
+            <p>Oto wskazówka do hasła: <strong onclick="showAlert('Niezwykle tajna wskazówka: Hasło składa się z dnia i miesiąca moich urodzin. (np. 0101 dla 1 stycznia) 😁')" onmouseover="this.style.cursor = 'pointer'">(kliknij)</strong></p>
+            <form>
+                <input type="password" id="password-input" placeholder="Wprowadź hasło">
+                <div id="button-container">
+                    <button id="cancel-button" type="button" onclick="showAlert('Serio? 😐')">Daj mi spokój!</button>
+                    <button class="check-button" type="button" onclick="checkPassword()">Zaloguj</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="success-page" class="page">
+        <div class="content-container">
+            <h1>Udało się! (To było bardzo trudne zadanie..)</h1>
+            <p>A skoro tutaj dotarłaś, zapewne chcesz się dowiedzieć po co znowu zawracam Ci głowę zamiast się odwalić raz na zawsze...</p>
+            <p>(Dobrze wiesz, że tego nie zrobię 😁)</p>
+            <button id="go-in-button" class="check-button" onclick="goToPage('apology-page'); showAlert('No już, nie poganiaj mnie! 😒');">No pokaż to gamoniu!</button>
+        </div>
+    </div>
+
+    <div id="apology-page" class="page">
+        <div class="content-container2">
+            <h1>Przepraszam ❤️‍🩹</h1>
+            <p> Wiem, że popełniłem błąd i już wiele razy za niego przepraszałem, ale tą stroną chcę Ci pokazać, że naprawdę zależy mi na tym, żeby to naprawić.
+                Uznałem, że nie ma lepszego sposobu na okazanie tego niż zrobienie czegoś specjalnego. A że nie jestem ani artystycznie ani technicznie uzdolniony, to
+                wykorzystałem swoją wiedzę informatyczną, żeby zrobić coś, co mam nadzieję Ci się spodoba. Wiem, że to nie jest idealne i że mogłem zrobić to lepiej, 
+                ale chciałem Ci pokazać, że naprawdę chcę naprawić nasze relacje. Poświęciłem na to sporo czasu, ale przede wszystkim długo zastanawiałem się 
+                jak to ugryźć, żeby wyszło to jak najlepiej. 
+            </p>
+            <p id="end-text">Poniżej przygotowałem specjalną galerię zdjęć, żeby powspominać Ci te dobre wspólne chwile. To jest ta największa niespodzianka 😇</p>
+            <div id="gallery">
+                <div class="gallery-row">
+                    <div class="gallery-item">
+                        <img src="img/img1.png">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/img2.png">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/img3.png">        
+                    </div>
+                </div>
+                <div class="gallery-row">
+                    <div class="gallery-item">
+                        <img src="img/img4.png">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/img5.png">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/img6.png">        
+                    </div>
+                </div>
+                <div class="gallery-row">
+                    <div class="gallery-item">
+                        <img src="img/img7.png">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/img8.png">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/img9.png">        
+                    </div>
+                </div>
+                <div class="gallery-row">
+                    <div class="gallery-last-item">
+                        <img src="img/img10.png">
+                    </div>
+                    <div class="gallery-last-item">
+                        <img src="img/img11.png">
+                    </div>
+                </div>
+            </div>
+            <h1 id="footer">Mam nadzieję, że Ci się spodobało! Wszystkiego najlepszego! 🥳</h1>
+            <p id="post-scriptum">PS: Tego jest więcej, ale wybrałem te moim zdaniem najfajniejsze</p>
+        </div>
+    </div>
+</body>
+</html>
