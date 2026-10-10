@@ -250,9 +250,9 @@ body {
 }
 
 .gallery-last-item {
-    width: 32vw;
+    width: 34vw;
     max-width: 460px;
-    height: 650px;
+    height: 600px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -285,9 +285,23 @@ body {
     color: #7d5862;
 }
 
+
 @media (max-width: 768px) {
     .page {
         padding: 20px 10px;
+    }
+
+    #login-page,
+    #success-page {
+        align-items: center;
+    }
+
+    #login-page #home-screen,
+    #success-page .content-container {
+        margin: auto;
+    }
+
+    #apology-page {
         align-items: flex-start;
     }
 
@@ -296,8 +310,6 @@ body {
     .page .content-container2 {
         width: 95%;
         padding: 25px 18px;
-        margin-top: 15px;
-        margin-bottom: 25px;
         border-radius: 16px;
     }
 
@@ -314,7 +326,7 @@ body {
     }
 
     #button-container {
-        flex-direction: column;
+        flex-direction: column-reverse;
         width: 100%;
         gap: 10px;
     }
@@ -340,11 +352,11 @@ body {
     .gallery-last-item {
         width: 100%;
         max-width: 100%;
-        height: 460px;
+        height: 480px;
         margin: 0;
     }
 
     .gallery-last-item img {
-        object-position: center;
+        object-position: top center;
     }
 }
